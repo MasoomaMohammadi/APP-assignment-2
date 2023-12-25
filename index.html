@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please take a moment to fill out our survey.</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Enter your age" min="18" max="100">
+
+            <label >Would you recommend APP to a friend?</label>
+                <div class="space">
+                <label for="definitly">Definitly</label>
+                <input type="radio" id="definitly" name="choice-option">
+                
+                <label for="Maybe">Maybe</label>
+                <input type="radio" id="Maybe" name="choice-option">
+                
+                <label for="not sure">Not Sure</label>
+                <input type="radio" id="not" name="choice-option">
+                </div>
+
+            <label for="dropdown">What is your level of education?</label>
+            <select id="dropdown">
+               <option value="level">Select One</option>
+               <option value="level">PHD</option>
+               <option value="level">Master</option>
+               <option value="level">Bachelor</option>
+            </select>
+
+          <label>What would you like to see improved?</label>
+            <div class="space">
+            <label for="assignments">Assignments</label>
+            <input type="checkbox" id="assignments" name="add-choice">
+        
+            <label for="lectures">Lectures</label>
+            <input type="checkbox" id="lectures" name="add-choice">
+        
+            <label for="labs">Labs</label>
+            <input type="checkbox" id="labs" name="add-choice">
+        
+            <label for="community">Community</label>
+            <input type="checkbox" id="community" name="add-choice">
+            </div>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+            <div class="submit">
+                <a href="./confirmation.html" id="submit">
+                Submit
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
